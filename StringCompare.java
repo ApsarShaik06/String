@@ -33,5 +33,13 @@ public class StringPalindrome{
          * 63479093 Address of name 1 :521960438
          * 63479093 Address of name 1 :556529265
          */
+
+        / If we use .equals method which is in STring class, it will check the content.
+         // == will alwys check the address.
+         if(name1.equals(name3)){
+            System.out.println("The given names are same.");
+        } else {
+            System.out.println("The given names are not same.");
+        }
     }
 }
