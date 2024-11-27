@@ -1,4 +1,6 @@
+import java.util.Scanner;
 public class lowerCaseVowels {
+    //Count how many times lowercase vowels occurred in a String entered by the user.
     public static int countOfLowerVowel(String str){
         int count =0;
         for(int i=0; i<str.length(); i++){
@@ -11,7 +13,8 @@ public class lowerCaseVowels {
         return count;
     }
     public static void main(String[] args) {
-        String s = "appleOragneyounoteggilove";
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(countOfLowerVowel(s));
     }
 }
